@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TatooineCitizensRegistry", "TatooineCitizensRegistry\TatooineCitizensRegistry.csproj", "{069BDCDD-DFF4-487E-B499-38C256E7EC28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TatooineCitizensRegistry.Tests", "TatooineCitizensRegistry.Tests\TatooineCitizensRegistry.Tests.csproj", "{F9324D4E-0367-47EA-A56E-E3BDCA2C5DAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TatooineDataAccess", "TatooineDataAccess\TatooineDataAccess.csproj", "{44AED307-088E-472D-818F-23D0A3F6F20D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TatooineModel", "TatooineModel\TatooineModel.csproj", "{C8504717-681D-40B7-A8CA-ACD1321AE9BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TatooineServices", "TatooineServices\TatooineServices.csproj", "{6A3EAA62-E082-49B0-A1C1-3876952BB9C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{1A794D51-7431-4159-BC38-421EE677DDA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{069BDCDD-DFF4-487E-B499-38C256E7EC28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{069BDCDD-DFF4-487E-B499-38C256E7EC28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{069BDCDD-DFF4-487E-B499-38C256E7EC28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{069BDCDD-DFF4-487E-B499-38C256E7EC28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9324D4E-0367-47EA-A56E-E3BDCA2C5DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9324D4E-0367-47EA-A56E-E3BDCA2C5DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9324D4E-0367-47EA-A56E-E3BDCA2C5DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9324D4E-0367-47EA-A56E-E3BDCA2C5DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44AED307-088E-472D-818F-23D0A3F6F20D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44AED307-088E-472D-818F-23D0A3F6F20D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44AED307-088E-472D-818F-23D0A3F6F20D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44AED307-088E-472D-818F-23D0A3F6F20D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8504717-681D-40B7-A8CA-ACD1321AE9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8504717-681D-40B7-A8CA-ACD1321AE9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8504717-681D-40B7-A8CA-ACD1321AE9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8504717-681D-40B7-A8CA-ACD1321AE9BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A3EAA62-E082-49B0-A1C1-3876952BB9C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3EAA62-E082-49B0-A1C1-3876952BB9C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3EAA62-E082-49B0-A1C1-3876952BB9C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3EAA62-E082-49B0-A1C1-3876952BB9C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A794D51-7431-4159-BC38-421EE677DDA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A794D51-7431-4159-BC38-421EE677DDA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A794D51-7431-4159-BC38-421EE677DDA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A794D51-7431-4159-BC38-421EE677DDA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
