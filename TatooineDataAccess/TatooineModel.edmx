@@ -91,7 +91,6 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="RoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="ParentId" Type="Int32" />
-          <NavigationProperty Name="Citizens" Relationship="Self.FK_Citizens_Roles" FromRole="Roles" ToRole="Citizens" />
         </EntityType>
         <EntityType Name="Statuses">
           <Key>
@@ -99,7 +98,6 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Citizens" Relationship="Self.FK_Citizens_Status" FromRole="Status" ToRole="Citizens" />
         </EntityType>
         <Association Name="FK_Citizens_Roles">
           <End Role="Roles" Type="Self.Roles" Multiplicity="1" />

@@ -14,15 +14,8 @@ namespace TatooineModel
     
     public partial class Roles
     {
-        public Roles()
-        {
-            this.Citizens = new HashSet<Citizens>();
-        }
-    
         public int Id { get; set; }
         public string RoleName { get; set; }
         public Nullable<int> ParentId { get; set; }
-    
-        public virtual ICollection<Citizens> Citizens { get; set; }
     }
 }

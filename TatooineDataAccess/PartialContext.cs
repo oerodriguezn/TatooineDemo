@@ -15,5 +15,6 @@ namespace TatooineDataAccess
             this.Configuration.LazyLoadingEnabled = false;
             this.Configuration.ProxyCreationEnabled = false;
         }
+    
     }
 }

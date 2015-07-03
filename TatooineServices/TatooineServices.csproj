@@ -73,11 +73,15 @@
     <Content Include="App_Data\TatooineCitizensRegistry_log.ldf">
       <DependentUpon>TatooineCitizensRegistry.mdf</DependentUpon>
     </Content>
+    <Content Include="Global.asax" />
     <Content Include="RolesService.svc" />
     <Content Include="TatooineCitizens.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="RolesService.svc.cs">
       <DependentUpon>RolesService.svc</DependentUpon>
     </Compile>
@@ -87,6 +91,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Log\" />
     <Folder Include="Rebels\" />
   </ItemGroup>
   <ItemGroup>

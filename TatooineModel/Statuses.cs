@@ -14,14 +14,7 @@ namespace TatooineModel
     
     public partial class Statuses
     {
-        public Statuses()
-        {
-            this.Citizens = new HashSet<Citizens>();
-        }
-    
         public int Id { get; set; }
         public string Status { get; set; }
-    
-        public virtual ICollection<Citizens> Citizens { get; set; }
     }
 }

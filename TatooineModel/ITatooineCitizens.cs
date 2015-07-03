@@ -20,7 +20,8 @@ namespace TatooineServices
         Citizens GetCitizen(string id);
 
         [OperationContract]
-        [WebGet]
+        [WebGet(RequestFormat = WebMessageFormat.Json,
+    ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.WrappedRequest)]
         List<Citizens> GetAllCitizens();
 
         [OperationContract]
@@ -36,17 +37,16 @@ namespace TatooineServices
         bool DeleteCitizen(string Id);
 
         [OperationContract]
-        [WebInvoke(UriTemplate = "Rebels/Add", Method = "POST")]
+        [WebInvoke(UriTemplate = "Rebels/Add", Method = "POST", RequestFormat = WebMessageFormat.Json,
+    ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.WrappedRequest)]
         [MethodImpl(MethodImplOptions.Synchronized)]
-        bool RegisterRebels(List<string> Rebels);
+        bool RegisterRebels(string[] Rebels);
 
         [OperationContract]
         [WebGet(UriTemplate = "Status")]
         List<Statuses> GeStatus();
 
-        [OperationContract]
-        [WebGet(UriTemplate = "Roles")]
-        List<Roles> GetRoles();
+     
 
     }
        

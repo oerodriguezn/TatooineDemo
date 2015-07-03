@@ -5,7 +5,7 @@
     <div class="jumbotron">
         <h1>Tatooine Citizens Register Web Site</h1>
         <p class="lead">Please use this web site to register new Tatooine Citizens</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Register new Citizen &raquo;</a></p>
+        <p><a href="Register.aspx" class="btn btn-primary btn-lg">Register new Citizen &raquo;</a></p>
     </div>
 
     <div class="row">
@@ -15,7 +15,7 @@
                 You can review register citizens to update or delete the registry information.
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">List &raquo;</a>
+                <a class="btn btn-default" href="CitizenList.aspx">List &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
@@ -24,7 +24,7 @@
                 The web site allows you to add, update and delete Tatooine roles used in the Citizen register process.
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Roles &raquo;</a>
+                <a class="btn btn-default" href="#">Roles &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
@@ -33,7 +33,7 @@
                 You can easily register rebels with this special page.
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Register Rebel &raquo;</a>
+                <a class="btn btn-default" href="Register.aspx">Register Rebel &raquo;</a>
             </p>
         </div>
     </div>
