@@ -35,7 +35,8 @@ namespace TatooineServices
             {
                 using (var db = new TatooineCitizensRegistryEntities())
                 {
-                    return db.Roles.SingleOrDefault(p => p.Id == int.Parse(Id));
+                    int id = int.Parse(Id);
+                    return db.Roles.SingleOrDefault(p => p.Id == id);
                 }
             }
             catch (Exception ex)
@@ -89,7 +90,8 @@ namespace TatooineServices
             {
                 using (var db = new TatooineCitizensRegistryEntities())
                 {
-                    var Rol = db.Roles.SingleOrDefault(p => p.Id == int.Parse(Id));
+                    int id = int.Parse(Id);
+                    var Rol = db.Roles.SingleOrDefault(p => p.Id == id);
                     db.Roles.Remove(Rol);
                     db.SaveChanges();
                     return true;

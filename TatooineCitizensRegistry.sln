@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TatooineServices", "Tatooin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{1A794D51-7431-4159-BC38-421EE677DDA1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{969C05D6-6E77-4ED8-8349-C50BD3740028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TatooineServices.Tests", "TatooineServices.Tests\TatooineServices.Tests.csproj", "{7206950B-5835-4B7F-ABA3-80B297196DA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,8 +49,16 @@ Global
 		{1A794D51-7431-4159-BC38-421EE677DDA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A794D51-7431-4159-BC38-421EE677DDA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A794D51-7431-4159-BC38-421EE677DDA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7206950B-5835-4B7F-ABA3-80B297196DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7206950B-5835-4B7F-ABA3-80B297196DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7206950B-5835-4B7F-ABA3-80B297196DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7206950B-5835-4B7F-ABA3-80B297196DA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F9324D4E-0367-47EA-A56E-E3BDCA2C5DAF} = {969C05D6-6E77-4ED8-8349-C50BD3740028}
+		{7206950B-5835-4B7F-ABA3-80B297196DA7} = {969C05D6-6E77-4ED8-8349-C50BD3740028}
 	EndGlobalSection
 EndGlobal

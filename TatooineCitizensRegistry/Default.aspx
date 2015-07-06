@@ -24,7 +24,7 @@
                 The web site allows you to add, update and delete Tatooine roles used in the Citizen register process.
             </p>
             <p>
-                <a class="btn btn-default" href="#">Roles &raquo;</a>
+                <a class="btn btn-default" href="Roles.aspx">Roles &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">

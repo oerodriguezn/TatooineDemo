@@ -46,7 +46,9 @@ namespace TatooineServices
         [WebGet(UriTemplate = "Status")]
         List<Statuses> GeStatus();
 
-     
+        [OperationContract]
+        [WebGet(UriTemplate = "CitizensInRole/{id}")]
+        List<Citizens> CitizensInRole(string Id);
 
     }
        

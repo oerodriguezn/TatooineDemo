@@ -49,8 +49,6 @@ namespace TatooineServices
             }
         }
 
-      
-
         public long AddCitizen(Citizens Citizen)
         {
             try
@@ -106,6 +104,23 @@ namespace TatooineServices
             catch (Exception ex)
             {
                 LogUtil.Log("DeleteCitizen", ex);
+                throw new FaultException(ex.Message);
+            }
+        }
+
+        public List<Citizens> CitizensInRole(string Id)
+        {
+            try
+            {
+                using (var db = new TatooineCitizensRegistryEntities())
+                {
+                    int id = int.Parse(Id);
+                    return db.Citizens.Where(p => p.IdRole == id).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                LogUtil.Log("CitizensInRole", ex);
                 throw new FaultException(ex.Message);
             }
         }

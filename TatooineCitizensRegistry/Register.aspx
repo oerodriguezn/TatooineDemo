@@ -31,15 +31,10 @@
         <div class="form-group">
         <asp:Button Text="Register" runat="server" ID="btSave" class="btn btn-primary" OnClick="btAdd_Click" OnClientClick="RegisterRebel();" />
         <asp:Button Text="Register new Citizen" runat="server" ID="btRegisterNew" class="btn btn-primary" Visible="false" OnClick="btRegisterNew_Click" />
-         <asp:Button Text="Cancel" runat="server" ID="btCancel" class="btn btn-default" OnClick="btCancel_Click" />
+         <asp:Button Text="Cancel" runat="server" ID="btCancel" class="btn btn-default" OnClick="btCancel_Click" CausesValidation="false" />
             </div>
     </fieldset>
         </div>
-    <style type="text/css">
-    .alert-text {
-        color: #a94442;
-    }
-</style>
       <%: Scripts.Render("~/scripts/jquery.blockUI.js") %>
     <script type="text/javascript">
         function  RegisterRebel ()

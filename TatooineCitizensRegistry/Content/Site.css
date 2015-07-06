@@ -28,4 +28,8 @@ textarea {
     .body-content {
         padding: 0;
     }
+
 }
+.alert-text {
+        color: #a94442;
+    }

@@ -16,19 +16,8 @@ namespace TatooineCitizensRegistry
         {
             if(!IsPostBack)
             {
-                List<Roles> roles = null;
-                if (Cache["roles"] == null)
-                {
-                    WCFproxy<ITatooineRoles>.Use(client =>
-                    {
-                        roles = client.GetRoles();
-                    });
-                    Cache["roles"] = roles;
-                }
-                else
-                {
-                    roles = ( List<Roles>) Cache["roles"];
-                }
+                List<TatooineModel.Roles> roles = Common.LoadRoles;
+                
                 if(roles!=null)
                 {
                     ddlRol.DataSource = roles;
