@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TatooineRepository.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:TatooineRepository.Fakes.StubITatooineRolesRepository">
+            <summary>Stub type of TatooineRepository.ITatooineRolesRepository</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITatooineRolesRepository.#ctor">
+            <summary>Initializes a new instance of type StubITatooineRolesRepository</summary>
+        </member>
+        <member name="F:TatooineRepository.Fakes.StubITatooineRolesRepository.AddRoleRoles">
+            <summary>Sets the stub of ITatooineRolesRepository.AddRole(Roles Rol)</summary>
+        </member>
+        <member name="F:TatooineRepository.Fakes.StubITatooineRolesRepository.DeleteRoleString">
+            <summary>Sets the stub of ITatooineRolesRepository.DeleteRole(String Id)</summary>
+        </member>
+        <member name="F:TatooineRepository.Fakes.StubITatooineRolesRepository.GetRolString">
+            <summary>Sets the stub of ITatooineRolesRepository.GetRol(String Id)</summary>
+        </member>
+        <member name="F:TatooineRepository.Fakes.StubITatooineRolesRepository.GetRoles">
+            <summary>Sets the stub of ITatooineRolesRepository.GetRoles()</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITatooineRolesRepository.tr::TatooineRepository#ITatooineRolesRepository#AddRole(TatooineModel.Roles)">
+            <summary>Sets the stub of ITatooineRolesRepository.AddRole(Roles Rol)</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITatooineRolesRepository.tr::TatooineRepository#ITatooineRolesRepository#DeleteRole(System.String)">
+            <summary>Sets the stub of ITatooineRolesRepository.DeleteRole(String Id)</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITatooineRolesRepository.tr::TatooineRepository#ITatooineRolesRepository#GetRol(System.String)">
+            <summary>Sets the stub of ITatooineRolesRepository.GetRol(String Id)</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITatooineRolesRepository.tr::TatooineRepository#ITatooineRolesRepository#GetRoles">
+            <summary>Sets the stub of ITatooineRolesRepository.GetRoles()</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITatooineRolesRepository.tr::TatooineRepository#ITatooineRolesRepository#UpdateRole(TatooineModel.Roles)">
+            <summary>Sets the stub of ITatooineRolesRepository.UpdateRole(Roles Rol)</summary>
+        </member>
+        <member name="F:TatooineRepository.Fakes.StubITatooineRolesRepository.UpdateRoleRoles">
+            <summary>Sets the stub of ITatooineRolesRepository.UpdateRole(Roles Rol)</summary>
+        </member>
+        <member name="T:TatooineRepository.Fakes.StubITattoineCitizensRepository">
+            <summary>Stub type of TatooineRepository.ITattoineCitizensRepository</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITattoineCitizensRepository.#ctor">
+            <summary>Initializes a new instance of type StubITattoineCitizensRepository</summary>
+        </member>
+        <member name="F:TatooineRepository.Fakes.StubITattoineCitizensRepository.AddCitizenCitizens">
+            <summary>Sets the stub of ITattoineCitizensRepository.AddCitizen(Citizens Citizen)</summary>
+        </member>
+        <member name="F:TatooineRepository.Fakes.StubITattoineCitizensRepository.CitizensInRoleString">
+            <summary>Sets the stub of ITattoineCitizensRepository.CitizensInRole(String Id)</summary>
+        </member>
+        <member name="F:TatooineRepository.Fakes.StubITattoineCitizensRepository.DeleteCitizenString">
+            <summary>Sets the stub of ITattoineCitizensRepository.DeleteCitizen(String Id)</summary>
+        </member>
+        <member name="F:TatooineRepository.Fakes.StubITattoineCitizensRepository.GeStatus">
+            <summary>Sets the stub of ITattoineCitizensRepository.GeStatus()</summary>
+        </member>
+        <member name="F:TatooineRepository.Fakes.StubITattoineCitizensRepository.GetAllCitizens">
+            <summary>Sets the stub of ITattoineCitizensRepository.GetAllCitizens()</summary>
+        </member>
+        <member name="F:TatooineRepository.Fakes.StubITattoineCitizensRepository.GetCitizenString">
+            <summary>Sets the stub of ITattoineCitizensRepository.GetCitizen(String id)</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITattoineCitizensRepository.tr::TatooineRepository#ITattoineCitizensRepository#AddCitizen(TatooineModel.Citizens)">
+            <summary>Sets the stub of ITattoineCitizensRepository.AddCitizen(Citizens Citizen)</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITattoineCitizensRepository.tr::TatooineRepository#ITattoineCitizensRepository#CitizensInRole(System.String)">
+            <summary>Sets the stub of ITattoineCitizensRepository.CitizensInRole(String Id)</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITattoineCitizensRepository.tr::TatooineRepository#ITattoineCitizensRepository#DeleteCitizen(System.String)">
+            <summary>Sets the stub of ITattoineCitizensRepository.DeleteCitizen(String Id)</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITattoineCitizensRepository.tr::TatooineRepository#ITattoineCitizensRepository#GeStatus">
+            <summary>Sets the stub of ITattoineCitizensRepository.GeStatus()</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITattoineCitizensRepository.tr::TatooineRepository#ITattoineCitizensRepository#GetAllCitizens">
+            <summary>Sets the stub of ITattoineCitizensRepository.GetAllCitizens()</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITattoineCitizensRepository.tr::TatooineRepository#ITattoineCitizensRepository#GetCitizen(System.String)">
+            <summary>Sets the stub of ITattoineCitizensRepository.GetCitizen(String id)</summary>
+        </member>
+        <member name="M:TatooineRepository.Fakes.StubITattoineCitizensRepository.tr::TatooineRepository#ITattoineCitizensRepository#UpdateCitizen(TatooineModel.Citizens)">
+            <summary>Sets the stub of ITattoineCitizensRepository.UpdateCitizen(Citizens Citizen)</summary>
+        </member>
+        <member name="F:TatooineRepository.Fakes.StubITattoineCitizensRepository.UpdateCitizenCitizens">
+            <summary>Sets the stub of ITattoineCitizensRepository.UpdateCitizen(Citizens Citizen)</summary>
+        </member>
+    </members>
+</doc>
