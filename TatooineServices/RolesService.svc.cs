@@ -6,6 +6,7 @@ using System.ServiceModel;
 using System.Text;
 using TatooineDataAccess;
 using TatooineModel;
+using TatooineRepository;
 using Utils;
 
 namespace TatooineServices
@@ -13,14 +14,18 @@ namespace TatooineServices
    
     public class RolesService : ITatooineRoles
     {
+         private readonly ITatooineRolesRepository repository =  null;
+
+         public RolesService(ITatooineRolesRepository ConcreteRepository)
+        {
+            repository = ConcreteRepository;
+        }
+
         public List<Roles> GetRoles()
         {
             try
             {
-                using (var db = new TatooineCitizensRegistryEntities())
-                {
-                    return db.Roles.ToList();
-                }
+               return repository.GetRoles();
             }
             catch (Exception ex)
             {
@@ -33,11 +38,7 @@ namespace TatooineServices
         {
             try
             {
-                using (var db = new TatooineCitizensRegistryEntities())
-                {
-                    int id = int.Parse(Id);
-                    return db.Roles.SingleOrDefault(p => p.Id == id);
-                }
+                return repository.GetRol(Id);
             }
             catch (Exception ex)
             {
@@ -50,12 +51,7 @@ namespace TatooineServices
         {
             try
             {
-                using (var db = new TatooineCitizensRegistryEntities())
-                {
-                    db.Roles.Add(Rol);
-                    db.SaveChanges();
-                    return Rol.Id;
-                }
+                return repository.AddRole(Rol);
             }
             catch (Exception ex)
             {
@@ -68,14 +64,7 @@ namespace TatooineServices
         {
             try
             {
-                using (var db = new TatooineCitizensRegistryEntities())
-                {
-                    var RolBD = db.Roles.SingleOrDefault(p => p.Id == Rol.Id);
-                    RolBD.RoleName = Rol.RoleName;
-                    RolBD.ParentId = Rol.ParentId;
-                    db.SaveChanges();
-                    return true;
-                }
+                return repository.UpdateRole(Rol);
             }
             catch (Exception ex)
             {
@@ -88,14 +77,7 @@ namespace TatooineServices
         {
             try
             {
-                using (var db = new TatooineCitizensRegistryEntities())
-                {
-                    int id = int.Parse(Id);
-                    var Rol = db.Roles.SingleOrDefault(p => p.Id == id);
-                    db.Roles.Remove(Rol);
-                    db.SaveChanges();
-                    return true;
-                }
+                return repository.DeleteRole(Id);
             }
             catch (Exception ex)
             {

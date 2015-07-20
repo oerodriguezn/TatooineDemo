@@ -6,8 +6,8 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
-using TatooineDataAccess;
 using TatooineModel;
+using TatooineRepository;
 using Utils;
 
 namespace TatooineServices
@@ -15,16 +15,17 @@ namespace TatooineServices
    
     public class TatooineCitizens : ITatooineCitizens
     {
+        private readonly ITattoineCitizensRepository repository =  null;
 
+        public TatooineCitizens(ITattoineCitizensRepository ConcreteRepository)
+        {
+            repository = ConcreteRepository;
+        }
         public Citizens GetCitizen(string CitizenID)
         {
             try
             {
-                using (var db = new TatooineCitizensRegistryEntities())
-                {
-                    long Id = long.Parse( CitizenID);
-                    return db.Citizens.SingleOrDefault(p => p.Id == Id);
-                }
+               return repository.GetCitizen(CitizenID);
             }
             catch (Exception ex)
             {
@@ -37,10 +38,7 @@ namespace TatooineServices
         {
             try
             {
-                using (var db = new TatooineCitizensRegistryEntities())
-                {
-                    return db.Citizens.Include("Roles").Include("Status").ToList();
-                }
+                return repository.GetAllCitizens();
             }
             catch (Exception ex)
             {
@@ -53,12 +51,7 @@ namespace TatooineServices
         {
             try
             {
-                using (var db = new TatooineCitizensRegistryEntities())
-                {
-                    db.Citizens.Add(Citizen);
-                    db.SaveChanges();
-                    return Citizen.Id;
-                }
+                return repository.AddCitizen(Citizen);
             }
             catch (Exception ex)
             {
@@ -71,16 +64,7 @@ namespace TatooineServices
         {
             try
             {
-                using (var db = new TatooineCitizensRegistryEntities())
-                {
-                    var CitizenDB = db.Citizens.SingleOrDefault(p => p.Id == Citizen.Id);
-                    CitizenDB.Name = Citizen.Name;
-                    CitizenDB.Specie = Citizen.Specie;
-                    CitizenDB.IdRole = Citizen.IdRole;
-                    CitizenDB.IdStatus = Citizen.IdStatus;
-                    db.SaveChanges();
-                    return true;
-                }
+                return repository.UpdateCitizen(Citizen);
             }
             catch (Exception ex)
             {
@@ -93,13 +77,7 @@ namespace TatooineServices
         {
             try
             {
-                using (var db = new TatooineCitizensRegistryEntities())
-                {
-                    var Citizen = db.Citizens.SingleOrDefault(p => p.Id == long.Parse(CitizenID));
-                    db.Citizens.Remove(Citizen);
-                    db.SaveChanges();
-                    return true;
-                }
+                return repository.DeleteCitizen(CitizenID);
             }
             catch (Exception ex)
             {
@@ -112,11 +90,7 @@ namespace TatooineServices
         {
             try
             {
-                using (var db = new TatooineCitizensRegistryEntities())
-                {
-                    int id = int.Parse(Id);
-                    return db.Citizens.Where(p => p.IdRole == id).ToList();
-                }
+                return repository.CitizensInRole(Id);
             }
             catch (Exception ex)
             {
@@ -156,10 +130,7 @@ namespace TatooineServices
         {
             try
             {
-                using (var db = new TatooineCitizensRegistryEntities())
-                {
-                    return db.Status.ToList();
-                }
+                return repository.GeStatus();
             }
             catch (Exception ex)
             {

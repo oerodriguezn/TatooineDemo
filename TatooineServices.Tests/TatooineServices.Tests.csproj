@@ -44,8 +44,22 @@
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="TatooineRepository.Fakes">
+      <HintPath>FakesAssemblies\TatooineRepository.Fakes.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -60,13 +74,22 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TatooineCitizensTests.cs" />
+    <Compile Include="TatooineCitizensUnityTests.cs" />
+    <Compile Include="TatooineCitizensFakeRepositoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TatooineDataAccess\TatooineDataAccess.csproj">
+      <Project>{44aed307-088e-472d-818f-23d0a3f6f20d}</Project>
+      <Name>TatooineDataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TatooineModel\TatooineModel.csproj">
       <Project>{c8504717-681d-40b7-a8ca-acd1321ae9bd}</Project>
       <Name>TatooineModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TatooineRepository\TatooineRepository.csproj">
+      <Project>{5e90b805-62c3-4e6f-8c46-1c0d0ac974fd}</Project>
+      <Name>TatooineRepository</Name>
     </ProjectReference>
     <ProjectReference Include="..\TatooineServices\TatooineServices.csproj">
       <Project>{6a3eaa62-e082-49b0-a1c1-3876952bb9c9}</Project>
@@ -75,7 +98,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Fakes Include="Fakes\TatooineRepository.fakes" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

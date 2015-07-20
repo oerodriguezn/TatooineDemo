@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="TatooineServices.RolesService" CodeBehind="RolesService.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="TatooineServices.RolesService" Factory="TatooineServices.WcfServiceFactory" %>

@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TatooineRolesRepositoryEF.cs" />
     <Compile Include="PartialContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TatooineModel.Context.cs">
@@ -75,6 +76,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TatooineModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="TattoineCitizenReporitoryEF.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -116,6 +118,10 @@
     <ProjectReference Include="..\TatooineModel\TatooineModel.csproj">
       <Project>{c8504717-681d-40b7-a8ca-acd1321ae9bd}</Project>
       <Name>TatooineModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TatooineRepository\TatooineRepository.csproj">
+      <Project>{5e90b805-62c3-4e6f-8c46-1c0d0ac974fd}</Project>
+      <Name>TatooineRepository</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
